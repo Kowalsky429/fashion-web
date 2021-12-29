@@ -1,0 +1,30 @@
+.prettier {
+	background: linear-gradient(to bottom, rgb(20, 20, 20), rgb(4, 31, 63));
+	display: grid;
+	place-items: center;
+	.prettier__image {
+		position: relative;
+		height: 80%;
+		width: 80%;
+		background: linear-gradient(
+				to right,
+				rgba(255, 0, 0, 0),
+				rgb(25, 60, 87)
+			),
+			url('../img/daniel-storek-JM-qKEd1GMI-unsplash.jpg');
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
+		transform-origin: left;
+		border-radius: 12px;
+		display: grid;
+		place-items: center;
+		.text {
+			h1 {
+				font-size: 3rem;
+				color: rgba(255, 255, 255, 0.3);
+				text-align: center;
+			}
+		}
+	}
+}

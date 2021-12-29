@@ -1,0 +1,49 @@
+.about {
+	@extend %flexCenter;
+	position: relative; //102 height
+	background: #111;
+	padding: 30px 50px;
+	flex-direction: column; //?
+	.title {
+		position: absolute;
+		top: 30px;
+		color: #fff;
+		font-size: 2.5rem;
+		font-weight: 400;
+		text-align: center;
+		span {
+			color: rgba(133, 134, 136, 255);
+		}
+	}
+	.content {
+		position: relative;
+		width: 90%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&__leftside {
+			color: #fff;
+			font-size: 1.1rem;
+			line-height: 2.2rem;
+			width: 50%;
+			text-align: justify;
+			color: rgb(255, 255, 255);
+		}
+		&__rightside {
+			filter: saturate(1.3);
+			position: relative;
+			width: 380px;
+			height: 460px;
+			box-shadow: -89px 61px 6px 0px rgba(133, 134, 136, 255);
+			transform: translateY(-20px);
+			img {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 6px;
+			}
+		}
+	}
+}

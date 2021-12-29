@@ -1,0 +1,31 @@
+@import '_scripts';
+@import '_home';
+@import '_about';
+@import '_brands';
+@import '_prettier';
+@import '_people';
+@import '_mediaqueries';
+@import '_informations';
+@import '_footer';
+// Global //
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	font-family: 'Montserrat Alternates', cursive;
+	color: #000;
+}
+body {
+	overflow-x: hidden;
+}
+html {
+	scroll-behavior: smooth;
+	font-size: 16px;
+}
+section {
+	min-height: 100vh;
+}

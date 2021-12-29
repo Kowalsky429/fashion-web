@@ -1,0 +1,256 @@
+@media (max-width: 1445px) {
+	// home section
+	.home .content {
+		width: 65% !important;
+	}
+	.content__images {
+		transform: scale(0.85);
+	}
+	.home__title {
+		transform: scale(4.5);
+	}
+	// about section
+	.about .content {
+		width: 96% !important;
+		&__rightside {
+			transform: scale(0.9) translateY(-40px) !important;
+		}
+	}
+	// content section
+	.content--brands {
+		width: 90% !important;
+	}
+}
+@media (max-width: 1133px) {
+	// home section
+	.home__title {
+		transform: scale(4.2);
+	}
+	.content__images {
+		transform: scale(0.75);
+	}
+	// about section
+	.about .content {
+		flex-direction: column !important;
+		padding: 20px 0;
+		&__leftside {
+			width: 98% !important;
+			padding: 80px 0 40px !important;
+		}
+		&__rightside {
+			width: 90% !important;
+			box-shadow: none !important;
+		}
+	}
+	// brands section
+	.content--brands {
+		width: 100% !important;
+		.box {
+			width: 450px !important;
+			height: 250px !important;
+			font-size: 1.3rem !important;
+		}
+	}
+	// prettier section
+	.prettier__image .text h1 {
+		font-size: 2.5rem !important;
+	}
+}
+@media (max-width: 1005px) {
+	// home section
+	.home .content {
+		width: 70% !important;
+	}
+	.home__title {
+		transform: scale(3.4);
+	}
+	// people section
+	.people {
+		.title {
+			&--right,
+			&--left {
+				display: none !important;
+			}
+			&--helper {
+				display: block !important;
+			}
+		}
+		.content {
+			width: 90% !important;
+			.box--2,
+			.box--3 {
+				padding: 0.1rem 1.5rem !important;
+				p {
+					font-size: 0.9rem !important;
+				}
+			}
+		}
+	}
+	// informations section
+	.informations .content {
+		width: 100% !important;
+	}
+}
+@media (max-width: 825px) {
+	// home section
+	.home .content {
+		width: 70% !important;
+	}
+	.content__images {
+		transform: scale(0.65);
+	}
+	.home__title {
+		transform: scale(3);
+	}
+	.nav {
+		padding: 0 40px !important;
+		&__menu {
+			position: fixed;
+			top: 0;
+			right: -240px;
+			width: 240px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background: #111;
+			z-index: 11;
+			li {
+				margin: 40px auto !important;
+				a {
+					color: #fff;
+					font-size: 1.5rem;
+				}
+				&::after {
+					background: #111 !important;
+					border-radius: 6px !important;
+				}
+			}
+		}
+		&__menu-btn {
+			display: block !important;
+			z-index: 12;
+		}
+	}
+	.active--menu {
+		.nav__menu {
+			transform: translateX(-100%) !important;
+		}
+		.nav__menu-btn {
+			.bx-x {
+				color: #fff !important;
+				display: block !important;
+			}
+			.bx-menu {
+				display: none !important;
+			}
+		}
+	}
+	.socials--bar {
+		left: 40px !important;
+	}
+	// about section
+	.about {
+		padding: 20px 10px !important;
+	}
+}
+@media (max-width: 745px) {
+	// home section
+	.nav {
+		padding: 0 30px !important;
+	}
+	.socials--bar {
+		left: 30px !important;
+	}
+	.home .content {
+		justify-content: center !important;
+		&__images {
+			display: none !important;
+		}
+	}
+	.home__title {
+		transform: scale(4);
+	}
+	// about section
+	.about .content {
+		&__leftside {
+			line-height: 1.6rem !important;
+		}
+	}
+	// brands section
+	.brands .title {
+		transform: scale(1.8) translateX(-30%) !important;
+	}
+	.content--brands {
+		width: 100% !important;
+	}
+	// people section
+	.people .content {
+		.box--1 {
+			grid-area: 1/1/4/7;
+		}
+		.box--2 {
+			grid-area: 4/1/7/4;
+		}
+	}
+	// informations content
+	.informations .title {
+		font-size: 2rem !important;
+	}
+}
+@media (max-width: 504px) {
+	// home section
+	.nav {
+		&__logo {
+			font-size: 1.6rem !important;
+		}
+	}
+	// about section
+	.about {
+		.title {
+			font-size: 2rem !important;
+		}
+		.content {
+			&__rightside {
+				width: 350px !important;
+				height: 400px !important;
+			}
+		}
+	}
+	// brands section
+	.content--brands {
+		.box {
+			&:not(:first-child) {
+				margin-top: 0px !important;
+			}
+			width: 320px !important;
+			height: 200px !important;
+			font-size: 1.3rem !important;
+		}
+	}
+	// prettier section
+	.prettier {
+		height: 504px !important;
+		&__image {
+			width: 88% !important;
+			min-height: 500px !important;
+			.text h1 {
+				font-size: 1.9rem !important;
+			}
+		}
+	}
+	// informations content
+	.informations .content {
+		.box {
+			padding: 0 5px;
+			width: calc((100% / 2) - 16px) !important;
+		}
+	}
+}
+@media (max-width: 400px) {
+	.nav__menu {
+		width: 100% !important;
+		right: -100% !important;
+	}
+}
